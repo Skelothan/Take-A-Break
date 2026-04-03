@@ -1,5 +1,5 @@
 /* DragDropable.cs
- * Script by Game-Dev Mammad
+ * Based on a script by Game-Dev Mammad
  * https://www.youtube.com/watch?v=zo1dkYfIJVg
  */
 
@@ -12,6 +12,8 @@ public class DragDropable : MonoBehaviour
 {
 	[SerializeField] private InputAction press, screenPos;
 
+	private float grabDistance = 0.5f;
+
 	private Vector3 curScreenPos;
 
 	Camera camera;
@@ -22,7 +24,7 @@ public class DragDropable : MonoBehaviour
 		get
 		{
 			float z = camera.WorldToScreenPoint(transform.position).z;
-			return camera.ScreenToWorldPoint(curScreenPos + new Vector3(0, 0, z));
+			return (camera.ScreenToWorldPoint(curScreenPos + new Vector3(0, 0, z)));
 		}
 	}
 	private bool isClickedOn
@@ -52,16 +54,23 @@ public class DragDropable : MonoBehaviour
 	private IEnumerator Drag()
 	{
 		isDragging = true;
-		Vector3 offset = transform.position - WorldPos;
+
+		// Move object towards camera when picked up
+		Vector3 cameraPos = camera.transform.position;
+		transform.position = (WorldPos + cameraPos) * grabDistance;
+		
 		// grab
 		GetComponent<Rigidbody>().useGravity = false;
 		while(isDragging)
 		{
 			// dragging
-			transform.position = WorldPos + offset;
+			transform.position = WorldPos;
+			Debug.Log("WorldPos: " + WorldPos.ToString());
 			yield return null;
 		}
 		// drop
 		GetComponent<Rigidbody>().useGravity = true;
+
+
 	}
 }
