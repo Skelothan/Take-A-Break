@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Break : MonoBehaviour
 {
@@ -8,10 +9,14 @@ public class Break : MonoBehaviour
     public float rigidbodyMass = 1f;
     public float forceImpulse = 10f;
 
+    private InputAction testAction;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        testAction = InputSystem.actions.FindAction("Jump");
+
         if (fragments == null)
         {
             fragments = transform;
@@ -23,7 +28,8 @@ public class Break : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        
+        if (testAction.IsPressed())
         {
             print("Boom");
             Explode();
