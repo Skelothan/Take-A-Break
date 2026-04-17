@@ -83,6 +83,8 @@ public class Break : MonoBehaviour
             if (meshRenderer == null)
                 continue;
 
+            meshRenderer.enabled = true;
+
             GameObject go = meshRenderer.gameObject;
 
             MeshFilter meshFilter = go.GetComponent<MeshFilter>();
