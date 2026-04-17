@@ -668,11 +668,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 9153053761514680}
   m_SourcePrefab: {fileID: 100100000, guid: 0e232e0105a2d4b4b9c02a6ed1c55305, type: 3}
---- !u!1 &5750338933243411741 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7769195552838484839, guid: 0e232e0105a2d4b4b9c02a6ed1c55305, type: 3}
-  m_PrefabInstance: {fileID: 6621147996699885956}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6278689493861743829 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0e232e0105a2d4b4b9c02a6ed1c55305, type: 3}
@@ -690,7 +685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f9d77dc40f34b478db939ca7920a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Break
-  intactObject: {fileID: 5750338933243411741}
+  intactObject: {fileID: 0}
   fragments: {fileID: 0}
   rigidbodyMass: 3
   forceImpulse: 6
