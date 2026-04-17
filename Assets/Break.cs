@@ -9,6 +9,9 @@ public class Break : MonoBehaviour
     public float rigidbodyMass = 1f;
     public float forceImpulse = 10f;
 
+    // The larger this number, the more force needed to break this object.
+    public float toughness = 2f;
+
     private InputAction testAction;
 
 
@@ -38,7 +41,7 @@ public class Break : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.relativeVelocity.magnitude > 2)
+        if (collision.impulse.magnitude > toughness)
         {
             Explode();
         }

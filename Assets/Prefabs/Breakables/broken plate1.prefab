@@ -459,6 +459,7 @@ MonoBehaviour:
   fragments: {fileID: 0}
   rigidbodyMass: 8
   forceImpulse: 2
+  toughness: 2
 --- !u!114 &5959093326192918944
 MonoBehaviour:
   m_ObjectHideFlags: 0
