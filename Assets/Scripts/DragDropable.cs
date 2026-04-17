@@ -17,6 +17,8 @@ public class DragDropable : MonoBehaviour
 
 	private Vector3 curScreenPos;
 
+	private bool isGrabbable = true;
+
 	Camera camera;
 	private bool isDragging;
 
@@ -33,6 +35,9 @@ public class DragDropable : MonoBehaviour
 	{
 		get
 		{
+			if (!isGrabbable)
+				return false;
+
 			Ray ray = camera.ScreenPointToRay(curScreenPos);
 			RaycastHit hit;
 			if(Physics.Raycast(ray, out hit))
@@ -99,5 +104,9 @@ public class DragDropable : MonoBehaviour
 		rb.AddForce(flingForce, ForceMode.Impulse);
 
 
+	}
+
+	public void setGrabbable(bool n) {
+		isGrabbable = n;
 	}
 }

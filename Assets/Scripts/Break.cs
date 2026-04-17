@@ -65,6 +65,11 @@ public class Break : MonoBehaviour
 
     public void Explode()
     {
+
+        //Disable grabbing broken objects
+        DragDropable dd = GetComponent<DragDropable>();
+        dd.setGrabbable(false);
+
         MeshRenderer[] meshRenderers = fragments.GetComponentsInChildren<MeshRenderer>(true);
         Rigidbody originRb = GetComponent<Rigidbody>();
         Vector3 origin = transform.position;
