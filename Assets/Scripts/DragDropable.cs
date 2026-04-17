@@ -13,6 +13,7 @@ public class DragDropable : MonoBehaviour
 	[SerializeField] private InputAction press, screenPos;
 
 	private readonly float throwForceMultiplier = 0.35f;
+	private readonly float throwTorqueMultiplier = 0.1f;
 	private readonly float grabDistance = 0.5f;
 
 	private Vector3 curScreenPos;
@@ -100,9 +101,14 @@ public class DragDropable : MonoBehaviour
 		yield return new WaitForFixedUpdate();
 		rb.useGravity = true;
 		Vector3 flingDirection = WorldPos - cameraPos;
-		Vector3 flingForce = flingDirection * (throwForceMultiplier * Mathf.Clamp(getMouseSpeed()/10, 0, 10));
+
+		float mouseSpeed = Mathf.Clamp(getMouseSpeed()/10, 0, 10);
+
+		Vector3 flingForce = flingDirection * (throwForceMultiplier * mouseSpeed);
 		rb.AddForce(flingForce, ForceMode.Impulse);
 
+		Vector3 flingTorque = camera.transform.right * (throwTorqueMultiplier * mouseSpeed);
+		rb.AddTorque(flingTorque, ForceMode.Impulse);
 
 	}
 

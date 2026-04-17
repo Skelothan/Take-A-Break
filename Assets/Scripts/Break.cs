@@ -83,6 +83,8 @@ public class Break : MonoBehaviour
             if (meshRenderer == null)
                 continue;
 
+            meshRenderer.enabled = true;
+
             GameObject go = meshRenderer.gameObject;
 
             MeshFilter meshFilter = go.GetComponent<MeshFilter>();
@@ -112,6 +114,8 @@ public class Break : MonoBehaviour
 
         //make the intact object disappear
         intactObject.SetActive(false);
+        MeshCollider originMC = GetComponent<MeshCollider>();
+        originMC.enabled = false;
     }
 
 
