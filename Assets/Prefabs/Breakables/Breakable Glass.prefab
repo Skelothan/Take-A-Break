@@ -97,8 +97,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Break
   intactObject: {fileID: 4292115177594474201}
   fragments: {fileID: 0}
-  rigidbodyMass: 8
-  forceImpulse: 4
+  rigidbodyMass: 2
+  forceImpulse: 10
   toughness: 1.5
 --- !u!114 &6781086324122779025
 MonoBehaviour:
