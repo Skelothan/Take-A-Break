@@ -55,7 +55,10 @@ public class Break : MonoBehaviour
     public void Explode()
     {
         MeshRenderer[] meshRenderers = fragments.GetComponentsInChildren<MeshRenderer>(true);
+        Rigidbody originRb = GetComponent<Rigidbody>();
         Vector3 origin = transform.position;
+        Vector3 originLinearVelocity = originRb.linearVelocity;
+        Vector3 originAngularVelocity = originRb.angularVelocity;
 
         for (int i = 0; i < meshRenderers.Length; i++)
         {
@@ -82,6 +85,8 @@ public class Break : MonoBehaviour
                 rb = go.AddComponent<Rigidbody>();
 
             rb.mass = rigidbodyMass;
+            rb.linearVelocity = originLinearVelocity;
+            rb.angularVelocity = originAngularVelocity;
 
             Vector3 direction = go.transform.position - origin;
 
