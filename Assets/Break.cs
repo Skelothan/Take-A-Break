@@ -36,6 +36,14 @@ public class Break : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.relativeVelocity.magnitude > 2)
+        {
+            Explode();
+        }
+    }
+
     public void DisableFragments()
     {
         MeshRenderer[] meshRenderers = fragments.GetComponentsInChildren<MeshRenderer>(true);
