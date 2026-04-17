@@ -114,6 +114,8 @@ public class Break : MonoBehaviour
 
         //make the intact object disappear
         intactObject.SetActive(false);
+        MeshCollider originMC = GetComponent<MeshCollider>();
+        originMC.enabled = false;
     }
 
 
