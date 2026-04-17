@@ -586,6 +586,120 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 443acc4c7afda441cb5be537e1bf68b5, type: 3}
+--- !u!1001 &8659993161939830264
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 561500446509325559, guid: 5e659f14f4f5647eda2f9c241eaa01ad, type: 3}
+      propertyPath: m_Name
+      value: Breakable Wine Glass B
+      objectReference: {fileID: 0}
+    - target: {fileID: 901011307964728909, guid: 5e659f14f4f5647eda2f9c241eaa01ad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.117
+      objectReference: {fileID: 0}
+    - target: {fileID: 901011307964728909, guid: 5e659f14f4f5647eda2f9c241eaa01ad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 901011307964728909, guid: 5e659f14f4f5647eda2f9c241eaa01ad, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 901011307964728909, guid: 5e659f14f4f5647eda2f9c241eaa01ad, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 901011307964728909, guid: 5e659f14f4f5647eda2f9c241eaa01ad, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 901011307964728909, guid: 5e659f14f4f5647eda2f9c241eaa01ad, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 901011307964728909, guid: 5e659f14f4f5647eda2f9c241eaa01ad, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 901011307964728909, guid: 5e659f14f4f5647eda2f9c241eaa01ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 901011307964728909, guid: 5e659f14f4f5647eda2f9c241eaa01ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 901011307964728909, guid: 5e659f14f4f5647eda2f9c241eaa01ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e659f14f4f5647eda2f9c241eaa01ad, type: 3}
+--- !u!1001 &8972679103633689859
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8490745962248549100, guid: 93b9a1612361a46d8a12b869243da004, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490745962248549100, guid: 93b9a1612361a46d8a12b869243da004, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.689
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490745962248549100, guid: 93b9a1612361a46d8a12b869243da004, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.3481176
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490745962248549100, guid: 93b9a1612361a46d8a12b869243da004, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490745962248549100, guid: 93b9a1612361a46d8a12b869243da004, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490745962248549100, guid: 93b9a1612361a46d8a12b869243da004, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490745962248549100, guid: 93b9a1612361a46d8a12b869243da004, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490745962248549100, guid: 93b9a1612361a46d8a12b869243da004, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490745962248549100, guid: 93b9a1612361a46d8a12b869243da004, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490745962248549100, guid: 93b9a1612361a46d8a12b869243da004, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123977130182994006, guid: 93b9a1612361a46d8a12b869243da004, type: 3}
+      propertyPath: m_Name
+      value: Breakable Wine Glass A
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 93b9a1612361a46d8a12b869243da004, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -595,3 +709,5 @@ SceneRoots:
   - {fileID: 4873822463445206322}
   - {fileID: 6639872841994814254}
   - {fileID: 1612369227}
+  - {fileID: 8972679103633689859}
+  - {fileID: 8659993161939830264}

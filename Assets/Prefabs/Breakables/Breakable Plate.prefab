@@ -350,7 +350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f4953d55a69454715a14c4d0b6012328, type: 3}
       propertyPath: m_Name
-      value: broken plate1
+      value: Breakable Plate
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f4953d55a69454715a14c4d0b6012328, type: 3}
       propertyPath: m_Layer
@@ -614,7 +614,7 @@ MonoBehaviour:
   intactObject: {fileID: 5724612576607245433}
   fragments: {fileID: 0}
   rigidbodyMass: 8
-  forceImpulse: 2
+  forceImpulse: 4
   toughness: 2
 --- !u!114 &5959093326192918944
 MonoBehaviour:
