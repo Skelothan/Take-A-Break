@@ -32,11 +32,11 @@ public class Break : MonoBehaviour
     public void Update()
     {
         
-        if (testAction.IsPressed())
-        {
-            print("Boom");
-            Explode();
-        }
+        // if (testAction.IsPressed())
+        // {
+        //     print("Boom");
+        //     Explode();
+        // }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -116,6 +116,11 @@ public class Break : MonoBehaviour
         intactObject.SetActive(false);
         MeshCollider originMC = GetComponent<MeshCollider>();
         originMC.enabled = false;
+
+        // Play sound
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.pitch = audioSource.pitch * Random.Range(0.9f, 1.1f);
+        audioSource.Play();
     }
 
 
