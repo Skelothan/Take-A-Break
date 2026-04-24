@@ -103,7 +103,6 @@ public class PauseMenu : MonoBehaviour
     public void GoToNextScene()
     {
         cameraScript.NextScene();
-        nextButton.SetActive(false);
         SetPaused(false);
     }
 
