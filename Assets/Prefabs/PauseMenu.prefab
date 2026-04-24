@@ -384,6 +384,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   pauseMenuButtons: {fileID: 4510786035693531583}
+  nextButton: {fileID: 1600805680122959844}
+  scene1Breakables: {fileID: 0}
+  scene2Breakables: {fileID: 0}
+  scene3Breakables: {fileID: 0}
 --- !u!1 &3653024655557052595
 GameObject:
   m_ObjectHideFlags: 0
