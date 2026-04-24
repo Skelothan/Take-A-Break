@@ -4,10 +4,19 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
 
+    private static PauseMenu _instance;
+
+    public static PauseMenu Instance { get { return _instance; } }
+
+    public bool isPaused = true;
+
     KitchenCamera cameraScript;
 
     public GameObject pauseMenuButtons;
 
+    public GameObject pauseOverlay;
+    public GameObject titleScreen;
+    public GameObject pauseButton;
     public GameObject nextButton;
 
     public GameObject scene1Breakables;
@@ -15,17 +24,28 @@ public class PauseMenu : MonoBehaviour
     public GameObject scene3Breakables;
 
 
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        } else {
+            _instance = this;
+        }
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Camera camera = Camera.main;
         cameraScript = camera.GetComponent<KitchenCamera>();
+        SetPaused(true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        bool canMoveOn = true;
+        // bool canMoveOn = true;
         // Break[] breakScripts;
 
         // switch (cameraScript.currentScene) {
@@ -47,24 +67,27 @@ public class PauseMenu : MonoBehaviour
         //     canMoveOn = canMoveOn && breakScripts[i].isBroken;
         // }
 
-        nextButton.SetActive(canMoveOn);
+        // nextButton.SetActive(canMoveOn);
 
     }
 
     public void ShowPauseMenu()
     {
         pauseMenuButtons.SetActive(true);
+        SetPaused(true);
     }
 
     public void HidePauseMenu()
     {
         pauseMenuButtons.SetActive(false);
+        SetPaused(false);
     }
 
     public void Reset()
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(currentSceneName);
+        SetPaused(false);
     }
 
     void GoToMainMenu()
@@ -81,5 +104,20 @@ public class PauseMenu : MonoBehaviour
     {
         cameraScript.NextScene();
         nextButton.SetActive(false);
+        SetPaused(false);
+    }
+
+    public void StartGame()
+    {
+        SetPaused(false);
+        titleScreen.SetActive(false);
+        pauseButton.SetActive(true);
+        nextButton.SetActive(true);
+    }
+
+    public void SetPaused(bool n)
+    {
+        isPaused = n;
+        pauseOverlay.SetActive(isPaused);
     }
 }

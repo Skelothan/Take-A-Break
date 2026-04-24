@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 78d30a808fa3d4068aa3ef8adf369fef
+guid: c632e6790737e42f1ab15d9a21698212
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork_8_0
+      name: black_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 142
-        width: 789
-        height: 970
+        x: 0
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,30 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48223550adcdb459a8e5daac15c0c5c7
-      internalID: 384182589
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled_Artwork_8_1
-      rect:
-        serializedVersion: 2
-        x: 984
-        y: 140
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f321839ba9f0e4ada8444980cd80bc14
-      internalID: 2093560783
+      spriteID: cf768f180ab29433bbb8942ec97daa85
+      internalID: -711190265
       vertices: []
       indices: 
       edges: []
@@ -157,7 +135,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 583a8d88aed5b466aa94b5b38d4b4c89
+    spriteID: b48a51a6eac054219998dc1f878273ac
     internalID: 0
     vertices: []
     indices: 
@@ -171,8 +149,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":true,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Untitled_Artwork_8_0: 384182589
-      Untitled_Artwork_8_1: 2093560783
+      black_0: -711190265
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
