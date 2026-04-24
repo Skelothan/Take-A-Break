@@ -14,8 +14,8 @@ TagManager:
   - Scene1Breakable
   - Scene2Breakable
   - Scene3Breakable
-  - 
-  - 
+  - Fragment
+  - VisibleOnly
   - 
   - 
   - 
