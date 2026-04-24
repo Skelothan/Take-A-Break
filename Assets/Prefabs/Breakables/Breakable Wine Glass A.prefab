@@ -248,6 +248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Breakable Wine Glass A
       objectReference: {fileID: 0}
+    - target: {fileID: 1164673872750148820, guid: 30bc8e38da1e144cbb03b0646cdf4cea, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1723188981831487158, guid: 30bc8e38da1e144cbb03b0646cdf4cea, type: 3}
       propertyPath: m_Enabled
       value: 0
