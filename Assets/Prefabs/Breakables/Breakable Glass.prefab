@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f9d77dc40f34b478db939ca7920a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Break
-  intactObject: {fileID: 0}
+  intactObject: {fileID: 2783990651901685119}
   fragments: {fileID: 0}
   rigidbodyMass: 2
   forceImpulse: 10
