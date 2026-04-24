@@ -36,7 +36,7 @@ public class DragDropable : MonoBehaviour
 	{
 		get
 		{
-			if (!isGrabbable)
+			if (!isGrabbable || PauseMenu.Instance.isPaused)
 				return false;
 
 			Ray ray = camera.ScreenPointToRay(curScreenPos);
