@@ -14,6 +14,8 @@ public class Break : MonoBehaviour
 
     private InputAction testAction;
 
+    public bool isBroken = false;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -121,6 +123,8 @@ public class Break : MonoBehaviour
         AudioSource audioSource = GetComponent<AudioSource>();
         audioSource.pitch = audioSource.pitch * Random.Range(0.9f, 1.1f);
         audioSource.Play();
+
+        isBroken = true;
     }
 
 
