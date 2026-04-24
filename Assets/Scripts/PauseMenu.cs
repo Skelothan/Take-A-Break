@@ -43,4 +43,12 @@ public class PauseMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void GoToNextScene()
+    {
+        Camera camera = Camera.main;
+        KitchenCamera cameraScript = camera.GetComponent<KitchenCamera>();
+
+        cameraScript.NextScene();
+    }
 }
