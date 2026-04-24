@@ -26,26 +26,26 @@ public class PauseMenu : MonoBehaviour
     void Update()
     {
         bool canMoveOn = true;
-        Break[] breakScripts;
+        // Break[] breakScripts;
 
-        switch (cameraScript.currentScene) {
-            case 0:
-                breakScripts = scene1Breakables.GetComponentsInChildren<Break>(true);
-                break;
-            case 1:
-                breakScripts = scene2Breakables.GetComponentsInChildren<Break>(true);
-                break;
-            case 2:
-                breakScripts = scene3Breakables.GetComponentsInChildren<Break>(true);
-                break;
-            default:
-                return;
-        }
+        // switch (cameraScript.currentScene) {
+        //     case 0:
+        //         breakScripts = scene1Breakables.GetComponentsInChildren<Break>(true);
+        //         break;
+        //     case 1:
+        //         breakScripts = scene2Breakables.GetComponentsInChildren<Break>(true);
+        //         break;
+        //     case 2:
+        //         breakScripts = scene3Breakables.GetComponentsInChildren<Break>(true);
+        //         break;
+        //     default:
+        //         return;
+        // }
 
-        for (int i = 0; i < breakScripts.Length; i++)
-        {
-            canMoveOn = canMoveOn && breakScripts[i].isBroken;
-        }
+        // for (int i = 0; i < breakScripts.Length; i++)
+        // {
+        //     canMoveOn = canMoveOn && breakScripts[i].isBroken;
+        // }
 
         nextButton.SetActive(canMoveOn);
 
