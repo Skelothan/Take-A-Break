@@ -104,6 +104,9 @@ public class PauseMenu : MonoBehaviour
     {
         cameraScript.NextScene();
         SetPaused(false);
+
+        if (cameraScript.currentScene >= 2)
+            nextButton.SetActive(false);
     }
 
     public void StartGame()
